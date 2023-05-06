@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 5,
+    "articles": [
+      {
+        "source": {
+          "id": null,
+          "name": "India.com"
+        },
+        "author": "Zee News Desk",
+        "title": "PBKS: 13-1 (1.3) | PBKS vs MI, IPL 2023 Cricket Live Score & Updates: Prabhsimran Singh Departs - Zee News",
+        "description": "PBKS: 94-2 (11) | PBKS vs MI, IPL 2023 Cricket Live Score & Updates: Liam Livingstone, Matthew Short",
+        "url": "https://zeenews.india.com/cricket/live-updates/live-cricket-score-pbks-vs-mi-ipl-2023-match-no-46-punjab-kings-vs-mumbai-indians-indian-premier-league-pca-stadium-mohali-shikhar-dhawan-rohit-sharma-arjun-tendulkar-2602052",
+        "urlToImage": "https://english.cdn.zeenews.com/sites/default/files/2023/05/03/1193795-pbksmiblog.jpg",
+        "publishedAt": "2023-05-03T14:10:59Z",
+        "content": null
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "NDTV News"
+        },
+        "author": null,
+        "title": "Congress Chief's Son Gets Poll Body Notice For Remarks Against PM Modi - NDTV",
+        "description": "NDTV.com: India, Business, Bollywood, Cricket, Video and Breaking News",
+        "url": "https://www.ndtv.com/",
+        "urlToImage": "https://cdn.ndtv.com/common/images/ogndtv.png",
+        "publishedAt": "2023-05-03T14:04:00Z",
+        "content": "If you are a climate change warrior or know someone who is doing incredible work in this space, send us your entries and we'll bring the most innovative stories to the world."
+      },
+      {
+        "source": {
+          "id": null,
+          "name": "Hindustan Times"
+        },
+        "author": "HT Sports Desk",
+        "title": "Virender Sehwag drops ferocious reply after MS Dhoni sensationally denies 'last season in IPL' claim - Hindustan Times",
+        "description": "On Wednesday, MS Dhoni hinted that the 2023 edition of the Indian Premier League may not be his last as active cricketer. | Cricket",
+        "url": "https://www.hindustantimes.com/cricket/virender-sehwag-drops-ferocious-reply-after-ms-dhoni-sensationally-denies-last-season-in-ipl-claim-101683114149852.html",
+        "urlToImage": "https://www.hindustantimes.com/ht-img/img/2023/05/03/1600x900/Collage_Maker-03-May-2023-06-03-PM-6205_1683117192916_1683117200745.jpg",
+        "publishedAt": "2023-05-03T12:36:03Z",
+        "content": "Chennai Super Kings captain Mahendra Singh Dhoni sent the internet into a frenzy when he sensationally denied that the 2023 Indian Premier League season would be his last as an active cricketer. Ther… [+1787 chars]"
+      },
+      {
+        "source": {
+          "id": "the-times-of-india",
+          "name": "The Times of India"
+        },
+        "author": "TIMESOFINDIA.COM",
+        "title": "GT vs DC, IPL 2023: We lost because I could not get my rhythm, says Hardik Pandya - Times of India",
+        "description": "Cricket News: Gujarat Titans captain Hardik Pandya on Tuesday took the blame for not finishing the game. Pandya, after Gujarat Titans lost the match by 5 runs to De",
+        "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/gt-vs-dc-ipl-2023-we-lost-because-i-could-not-get-my-rhythm-says-hardik-pandya/articleshow/99948062.cms",
+        "urlToImage": "https://static.toiimg.com/thumb/msid-99948125,width-1070,height-580,imgsize-50290,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+        "publishedAt": "2023-05-03T04:29:00Z",
+        "content": "Top controversies that have rocked IPL over the years"
+      }
+    ]
+  }
