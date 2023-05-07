@@ -35,7 +35,7 @@ export default class News extends Component {
 
   async updateNews() {
     // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f5f227c16c604c9ea4eb9d56af9abe6d&q&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-    const url = `https://gnews.io/api/v4/top-headlines?category=${this.props.category}&country=${this.props.country}&apikey=b69d624070436ebf4f65259760c33985&max=${this.props.pageSize}`;
+    const url = `https://gnews.io/api/v4/top-headlines?category=${this.props.category}&country=${this.props.country}&lang=en&apikey=b69d624070436ebf4f65259760c33985&max=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -67,7 +67,9 @@ export default class News extends Component {
             className="text-center"
             style={{ fontWeight: "600", fontFamily: "sans-serif" }}
           >
-            Khabarwala - {this.props.category}
+            KhabarWala -   {this.capitalizeFirstLetter(
+      this.props.category
+    )}
           </h1>}
         <div className="row">
           {!this.state.loading &&

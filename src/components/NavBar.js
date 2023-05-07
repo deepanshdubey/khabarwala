@@ -9,7 +9,7 @@ export class NavBar extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
-              KhabarWala
+            <img src="kwLogo.png" height={'100px'} alt="logo" />
             </Link>
             <button
               className="navbar-toggler"
