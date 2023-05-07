@@ -37,7 +37,7 @@ export default class News extends Component {
 
   async updateNews(){
     // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f5f227c16c604c9ea4eb9d56af9abe6d&q&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-    const url = `https://gnews.io/api/v4/top-headlines?category=${this.props.category}&country=${this.props.country}&apikey=f4ac792afdde24047dbba1653a64a4cd&max=${this.props.pageSize}`
+    const url = `https://gnews.io/api/v4/top-headlines?category=${this.props.category}&country=${this.props.country}&apikey=b69d624070436ebf4f65259760c33985&max=${this.props.pageSize}`
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
