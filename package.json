@@ -1,6 +1,7 @@
 {
   "name": "newsapp",
   "version": "0.1.0",
+  "homepage": "https://apnakhabarwala.netlify.app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

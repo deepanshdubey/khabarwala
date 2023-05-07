@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl, source, author, date } =
+    let { title, description, imageUrl, newsUrl, source, date } =
       this.props;
     return (
       <div className="my-3">
@@ -23,7 +23,7 @@ export default class NewsItem extends Component {
             
             <p className="card-text"></p>
             <small className="text-muted">
-              By {author ? author : "unknown"} on {new Date(date).toGMTString()}{" "}
+              By {source ? source : "unknown"} on {new Date(date).toGMTString()}{" "}
             </small>
             <p />
             <a

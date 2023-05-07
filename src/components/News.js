@@ -29,14 +29,15 @@ export default class News extends Component {
     this.state = {
       articles: this.articles,
       loading: false,
-      page: 1,
+      page: 1
     };
 
     document.title = `${this.capitalizeFirstLetter(this.props.category)} | KhabarWala - Daily News` 
   }
 
   async updateNews(){
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=95fa6ed06ee34f79a7acba33d528ff0b&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f5f227c16c604c9ea4eb9d56af9abe6d&q&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    const url = `https://gnews.io/api/v4/top-headlines?category=${this.props.category}&country=${this.props.country}&apikey=f4ac792afdde24047dbba1653a64a4cd&max=${this.props.pageSize}`
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -50,17 +51,12 @@ export default class News extends Component {
 
   async componentDidMount() {
     this.updateNews();
-
   }
 
-  // if(this.state.page + 1 > (Math.state.totalResults/20))
-
-  // movetoNextPage = async () => {
 
   handlePrevClick = async () => {
     this.setState({page: this.state.page - 1});
     this.updateNews();
-
   };
 
   handleNextClick = async () => {
@@ -85,7 +81,7 @@ export default class News extends Component {
                         ? element.description
                         : "Top Headlines"
                     }
-                    imageUrl={element.urlToImage}
+                    imageUrl={element.image}
                     newsUrl={element.url}
                     source={element.source.name}
                     author = {element.author}
@@ -95,7 +91,7 @@ export default class News extends Component {
               );
             })}
         </div>
-        <div className="container d-flex justify-content-between">
+        {/* <div className="container d-flex justify-content-between">
           <button
             disabled={this.state.page <= 1}
             type="button"
@@ -117,7 +113,7 @@ export default class News extends Component {
           >
             Next &rarr;
           </button>
-        </div>
+        </div> */}
       </div>
     );
   }
