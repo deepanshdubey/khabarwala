@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 
-export class NavBar extends Component {
-  render() {
+const NavBar = () => {
+  
     return (
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div >
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{height: "5rem"}}>
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
             <img src="kwLogo.png" height={'100px'} alt="logo" />
@@ -77,6 +77,5 @@ export class NavBar extends Component {
       </div>
     );
   }
-}
 
 export default NavBar;

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-export default class Spinner extends Component {
-  render() {
+const Spinner = () => {
     return (
       <div
         style={{
@@ -17,4 +16,4 @@ export default class Spinner extends Component {
       </div>
     );
   }
-}
+export default Spinner

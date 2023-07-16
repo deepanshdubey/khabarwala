@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, newsUrl, source, date } =
-      this.props;
+const NewsItem = (props) => {
+    let { title, description, imageUrl, newsUrl, source, date } = props;
     return (
       <div className="my-3">
         <div className="card">
-        <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:'90%' , zIndex: '1'}}>
+          <div className="position-absolute" style={{display:'flex' , right: '0'}}>
+          <span className="badge rounded-pill bg-danger" >
               {source}
             </span>
-          {/* <img src={imageUrl?imageUrl:"https://www.hindustantimes.com/ht-img/img/2023/05/04/1600x900/Penumbral_Lunar_Eclipse_Chandra_Grahan_2023_1683178890154_1683178890290.jpg" } className="card-img-top" alt="..."/> */}
+          </div>
+        
           <img
             src={imageUrl ? imageUrl : "/khabarwalaFiller.gif"}
             className="card-img-top"
@@ -38,5 +38,5 @@ export default class NewsItem extends Component {
         </div>
       </div>
     );
-  }
-}
+    }
+export default NewsItem
